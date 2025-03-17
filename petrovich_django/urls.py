@@ -25,7 +25,7 @@ from services.views import ServiceAPIView
 from django.views.static import serve
 from reserves.views import ReserveAPIView
 from django.conf.urls.static import static
-from petrovich_django.petrovich_django import settings
+from . import settings
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FLUTTER_WEB_APP = os.path.join(BASE_DIR, 'landing')
 
