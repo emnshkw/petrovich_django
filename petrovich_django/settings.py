@@ -25,10 +25,10 @@ SECRET_KEY = 'django-insecure-8@^_ltgrp36t$=rjx8rr9jton1n8_lmjl1js5gp*@)e-6vku+o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CSRF_TRUSTED_ORIGINS = ['http://193.168.3.68','http://ypetrovicha29.ru','https://ypetrovicha29.ru']
+CSRF_TRUSTED_ORIGINS = ['http://45.139.78.102','http://ypetrovicha29.ru','https://ypetrovicha29.ru']
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
-ALLOWED_HOSTS = ['127.0.0.1', '193.168.3.68','ypetrovicha29.ru']
+ALLOWED_HOSTS = ['127.0.0.1', '45.139.78.102','ypetrovicha29.ru']
 
 
 # Application definition
