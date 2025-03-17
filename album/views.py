@@ -13,7 +13,8 @@ class AlbumAPIView(APIView):
 
     def get(self,request,*args,**kwargs):
         pk = kwargs.get('pk',None)
-        print(os.listdir("/home/petrovich_django/media/"))
+        for file in os.listdir("/home/petrovich_django/media/"):
+            ImageModel.objects.create(description=str(file),image=str(file))
         if pk:
             try:
                 instance = AlbumModel.objects.get(pk=pk)
