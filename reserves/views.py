@@ -33,3 +33,4 @@ class ReserveAPIView(APIView):
         if house is None:
             return Response({"status":'failed','message':"Укажите название дома!"})
         new_reserve = ReserveModel.objects.create(name=name,sname=sname,phone=phone,date=date,count=count,house=house)
+        return Response({"status": 'success', 'message': "Бронирование добавлено!"})
