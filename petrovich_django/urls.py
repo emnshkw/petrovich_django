@@ -33,6 +33,7 @@ def flutter_redirect(request, resource):
     return serve(request, resource, FLUTTER_WEB_APP)
 urlpatterns = [
     path('', lambda r: flutter_redirect(r, 'index.html')),
+    path('landing/', lambda r: flutter_redirect(r, 'index.html')),
     path('landing/<path:resource>', flutter_redirect),
     path('admin/', admin.site.urls),
     path('album/',AlbumAPIView.as_view()),
