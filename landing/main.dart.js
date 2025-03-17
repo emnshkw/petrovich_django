@@ -28011,7 +28011,7 @@ aAG(a){return B.cK.G0(0,B.ae.ho(0,a.w),null)},
 om(){var s=0,r=A.R(t.O),q
 var $async$om=A.S(function(a,b){if(a===1)return A.O(b,r)
 while(true)switch(s){case 0:s=3
-return A.X(A.wh(A.e8("http://193.168.3.68/houses/")),$async$om)
+return A.X(A.wh(A.e8("https://ypetrovicha29.ru/houses/")),$async$om)
 case 3:q=b
 s=1
 break
@@ -28020,7 +28020,7 @@ return A.Q($async$om,r)},
 a32(){var s=0,r=A.R(t.O),q
 var $async$a32=A.S(function(a,b){if(a===1)return A.O(b,r)
 while(true)switch(s){case 0:s=3
-return A.X(A.wh(A.e8("http://193.168.3.68/service/")),$async$a32)
+return A.X(A.wh(A.e8("https://ypetrovicha29.ru/service/")),$async$a32)
 case 3:q=b
 s=1
 break
@@ -28029,7 +28029,7 @@ return A.Q($async$a32,r)},
 a2Z(){var s=0,r=A.R(t.O),q
 var $async$a2Z=A.S(function(a,b){if(a===1)return A.O(b,r)
 while(true)switch(s){case 0:s=3
-return A.X(A.wh(A.e8("http://193.168.3.68/enjoy/")),$async$a2Z)
+return A.X(A.wh(A.e8("https://ypetrovicha29.ru/enjoy/")),$async$a2Z)
 case 3:q=b
 s=1
 break
@@ -28038,7 +28038,7 @@ return A.Q($async$a2Z,r)},
 a3_(a){var s=0,r=A.R(t.O),q
 var $async$a3_=A.S(function(b,c){if(b===1)return A.O(c,r)
 while(true)switch(s){case 0:s=3
-return A.X(A.wh(A.e8("http://193.168.3.68/houses/"+a+"/")),$async$a3_)
+return A.X(A.wh(A.e8("https://ypetrovicha29.ru/houses/"+a+"/")),$async$a3_)
 case 3:q=c
 s=1
 break
@@ -28047,7 +28047,7 @@ return A.Q($async$a3_,r)},
 a31(a){var s=0,r=A.R(t.O),q
 var $async$a31=A.S(function(b,c){if(b===1)return A.O(c,r)
 while(true)switch(s){case 0:s=3
-return A.X(A.wh(A.e8("http://193.168.3.68/service/"+a+"/")),$async$a31)
+return A.X(A.wh(A.e8("https://ypetrovicha29.ru/service/"+a+"/")),$async$a31)
 case 3:q=c
 s=1
 break
@@ -28056,7 +28056,7 @@ return A.Q($async$a31,r)},
 a2Y(a){var s=0,r=A.R(t.O),q
 var $async$a2Y=A.S(function(b,c){if(b===1)return A.O(c,r)
 while(true)switch(s){case 0:s=3
-return A.X(A.wh(A.e8("http://193.168.3.68/enjoy/"+a+"/")),$async$a2Y)
+return A.X(A.wh(A.e8("https://ypetrovicha29.ru/enjoy/"+a+"/")),$async$a2Y)
 case 3:q=c
 s=1
 break
@@ -28065,7 +28065,7 @@ return A.Q($async$a2Y,r)},
 a2X(){var s=0,r=A.R(t.O),q
 var $async$a2X=A.S(function(a,b){if(a===1)return A.O(b,r)
 while(true)switch(s){case 0:s=3
-return A.X(A.wh(A.e8("http://193.168.3.68/album/")),$async$a2X)
+return A.X(A.wh(A.e8("https://ypetrovicha29.ru/album/")),$async$a2X)
 case 3:q=b
 s=1
 break
@@ -28076,7 +28076,7 @@ var $async$wm=A.S(function(b,c){if(b===1)return A.O(c,r)
 while(true)switch(s){case 0:p=B.cK.mz(a)
 o=t.N
 s=3
-return A.X(A.b0p(A.e8("http://193.168.3.68/reserve/"),p,A.aM(["Content-Type","application/json","charset","UTF-8","Access-Control-Allow-Origin","*","Access-Control-Allow-Headers","*","Access-Control-Allow-Methods","*"],o,o)),$async$wm)
+return A.X(A.b0p(A.e8("https://ypetrovicha29.ru/reserve/"),p,A.aM(["Content-Type","application/json","charset","UTF-8","Access-Control-Allow-Origin","*","Access-Control-Allow-Headers","*","Access-Control-Allow-Methods","*"],o,o)),$async$wm)
 case 3:q=c
 s=1
 break
