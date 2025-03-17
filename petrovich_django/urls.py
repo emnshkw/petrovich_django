@@ -41,8 +41,8 @@ urlpatterns = [
     path('album/<int:pk>/',AlbumAPIView.as_view()),
     path('houses/',HouseAPIView.as_view()),
     path('houses/<int:pk>/',HouseAPIView.as_view()),
-    path('service/',EnjoyAPIView.as_view()),
-    path('service/<int:pk>/',EnjoyAPIView.as_view()),
+    path('enjoy/',EnjoyAPIView.as_view()),
+    path('enjoy/<int:pk>/',EnjoyAPIView.as_view()),
     path('service/',AlbumAPIView.as_view()),
     path('service/<int:pk>/',ServiceAPIView.as_view()),
 ]
