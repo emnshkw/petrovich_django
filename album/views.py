@@ -1,8 +1,11 @@
+import os
+
 from rest_framework.permissions import AllowAny
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .serializers import AlbumSerializer
 from .models import AlbumModel
+from photos.models import ImageModel
 
 
 class AlbumAPIView(APIView):
@@ -10,6 +13,7 @@ class AlbumAPIView(APIView):
 
     def get(self,request,*args,**kwargs):
         pk = kwargs.get('pk',None)
+        print(os.listdir("/home/petrovich_django/media/"))
         if pk:
             try:
                 instance = AlbumModel.objects.get(pk=pk)
