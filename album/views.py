@@ -63,19 +63,19 @@ class AlbumAPIView(APIView):
         for name in name_and_files.keys():
             house = HouseModel.objects.create(title=name)
             for file in name_and_files[name]:
-                image = ImageModel.objects.get(description=file)
+                image = ImageModel.objects.filter(description=file).first()
                 house.images.add(image)
             house.save()
         for name in name_and_files.keys():
             enjoy = EnjoyModel.objects.create(title=name)
             for file in name_and_files[name]:
-                image = ImageModel.objects.get(description=file)
+                image = ImageModel.objects.filter(description=file).first()
                 enjoy.images.add(image)
             enjoy.save()
         for name in name_and_files.keys():
             service = ServiceModel.objects.create(title=name)
             for file in name_and_files[name]:
-                image = ImageModel.objects.get(description=file)
+                image = ImageModel.objects.filter(description=file).first()
                 service.images.add(image)
             service.save()
         if pk:
