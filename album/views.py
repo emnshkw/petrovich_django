@@ -54,7 +54,7 @@ class AlbumAPIView(APIView):
         for image in images:
             with_name_imgs = ImageModel.objects.filter(description=str(image.description))
             while len(with_name_imgs) != 1:
-                with_name_imgs.last.delete()
+                with_name_imgs.last().delete()
         for name in name_and_files.keys():
             enjoy = EnjoyModel.objects.create(title=name)
             for file in name_and_files[name]:
