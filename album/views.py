@@ -14,7 +14,16 @@ class AlbumAPIView(APIView):
     def get(self,request,*args,**kwargs):
         pk = kwargs.get('pk',None)
         files = os.listdir('/home/petrovich_django/media/')
-        print(files)
+        names = []
+        a = ord('а')
+        alp = ''.join([chr(i) for i in range(a,a+32)]) + ' '
+        for file in files:
+            file = file.split('.')[0]
+            for i in range(len(file)):
+                if file[i] not in alp:
+                    if file[:i] not in names:
+                        names.append(file[:i])
+        print(names)
         if pk:
             try:
                 instance = AlbumModel.objects.get(pk=pk)
