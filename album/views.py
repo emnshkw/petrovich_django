@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from .serializers import AlbumSerializer
 from .models import AlbumModel
 from photos.models import ImageModel
-# from houses.models import HouseModel
+from houses.models import HouseModel
 from enjoys.models import EnjoyModel
 from services.models import ServiceModel
 
@@ -54,12 +54,12 @@ class AlbumAPIView(APIView):
         #         image = ImageModel.objects.get(description=file)
         #         house.images.add(image)
         #     house.save()
-        images = ImageModel.objects.all()
-        for image in images:
-            with_name_imgs = list(ImageModel.objects.filter(description=str(image.description)))
-            while len(with_name_imgs) > 1:
-                poped = with_name_imgs.pop(0)
-                poped.delete()
+        # images = ImageModel.objects.all()
+        # for image in images:
+        #     with_name_imgs = list(ImageModel.objects.filter(description=str(image.description)))
+        #     while len(with_name_imgs) > 1:
+        #         poped = with_name_imgs.pop(0)
+        #         poped.delete()
         for name in name_and_files.keys():
             house = HouseModel.objects.create(title=name)
             for file in name_and_files[name]:
