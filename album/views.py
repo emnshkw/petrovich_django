@@ -16,7 +16,7 @@ class AlbumAPIView(APIView):
         files = os.listdir('/home/petrovich_django/media/')
         names = []
         a = ord('а')
-        alp = ''.join([chr(i) for i in range(a,a+32)]) + ' '
+        alp = ''.join([chr(i) for i in range(a,a+32)]) + ' _'
         for file in files:
             file = file.split('.')[0]
             word = ''
