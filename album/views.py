@@ -19,10 +19,11 @@ class AlbumAPIView(APIView):
         alp = ''.join([chr(i) for i in range(a,a+32)]) + ' '
         for file in files:
             file = file.split('.')[0]
+            word = ''
             for i in range(len(file)):
-                if file[i] not in alp:
-                    if file[:i] not in names:
-                        names.append(file[:i])
+                if file[i] in alp:
+                    word += file[i]
+            names.append(word)
         print(names)
         if pk:
             try:
