@@ -35,7 +35,12 @@ class AlbumAPIView(APIView):
             for file in files:
                 if name in file:
                     name_and_files[name].append(file)
-        print(name_and_files)
+        for name in name_and_files.keys():
+            album = AlbumModel.objects.create(title=name)
+            for file in name_and_files[name]:
+                image = ImageModel.objects.create(description=file,image=file)
+                album.images.add(image)
+            album.save()
         if pk:
             try:
                 instance = AlbumModel.objects.get(pk=pk)
