@@ -21,7 +21,7 @@ class AlbumAPIView(APIView):
             file = file.split('.')[0]
             word = ''
             for i in range(len(file)):
-                if file[i] in alp:
+                if file[i].lower() in alp:
                     word += file[i]
             names.append(word)
         print(names)
