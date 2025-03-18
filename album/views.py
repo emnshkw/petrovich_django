@@ -20,7 +20,7 @@ class AlbumAPIView(APIView):
         for file in files:
             if '_' in file:
                 os.remove(f'/home/petrovich_django/media/{file}')
-                break
+                continue
             file = file.split('.')[0]
             word = ''
             for i in range(len(file)):
