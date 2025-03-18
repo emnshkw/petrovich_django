@@ -24,7 +24,15 @@ class AlbumAPIView(APIView):
                 if file[i].lower() in alp:
                     word += file[i]
             names.append(word)
-        print(names)
+        names = list(set(names))
+        name_and_files = {}
+        for name in names:
+            if name not in name_and_files.keys():
+                name_and_files[name] = []
+            for file in files:
+                if name in file:
+                    name_and_files[name].append(file)
+        print(name_and_files)
         if pk:
             try:
                 instance = AlbumModel.objects.get(pk=pk)
