@@ -42,17 +42,21 @@ class AlbumAPIView(APIView):
             name_and_files[name] = list(set(name_and_files[name]))
             for file in name_and_files[name]:
                 ImageModel.objects.create(description=file, image=file)
-        # for name in name_and_files.keys():
-        #     album = AlbumModel.objects.create(title=name)
-        #     for file in name_and_files[name]:
-        #         image = ImageModel.objects.create(description=file,image=file)
-        #         album.images.add(image)
-        #     album.save()
+        for name in name_and_files.keys():
+            album = AlbumModel.objects.create(title=name)
+            for file in name_and_files[name]:
+                image = list(ImageModel.objects.filter(description=file))[0]
+                album.images.add(image)
+            album.save()
         # for name in name_and_files.keys():
         #     house = HouseModel.objects.create(title=name)
+        #     count = 0
         #     for file in name_and_files[name]:
+        #         count += 1
         #         image = ImageModel.objects.get(description=file)
         #         house.images.add(image)
+        #         if count == 5:
+        #             break
         #     house.save()
         # images = ImageModel.objects.all()
         # for image in images:
@@ -62,21 +66,33 @@ class AlbumAPIView(APIView):
         #         poped.delete()
         for name in name_and_files.keys():
             house = HouseModel.objects.create(title=name)
+            count = 0
             for file in name_and_files[name]:
-                image = ImageModel.objects.filter(description=file).first()
+                count += 1
+                image = list(ImageModel.objects.filter(description=file))[0]
                 house.images.add(image)
+                if count == 5:
+                    break
             house.save()
         for name in name_and_files.keys():
             enjoy = EnjoyModel.objects.create(title=name)
+            count = 0
             for file in name_and_files[name]:
-                image = ImageModel.objects.filter(description=file).first()
+                count += 1
+                image = list(ImageModel.objects.filter(description=file))[0]
                 enjoy.images.add(image)
+                if count == 5:
+                    break
             enjoy.save()
         for name in name_and_files.keys():
             service = ServiceModel.objects.create(title=name)
+            count = 0
             for file in name_and_files[name]:
-                image = ImageModel.objects.filter(description=file).first()
+                count += 1
+                image = list(ImageModel.objects.filter(description=file))[0]
                 service.images.add(image)
+                if count == 5:
+                    break
             service.save()
         if pk:
             try:
