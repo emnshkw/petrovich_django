@@ -43,7 +43,7 @@ urlpatterns = [
     path('houses/<int:pk>/',HouseAPIView.as_view()),
     path('enjoy/',EnjoyAPIView.as_view()),
     path('enjoy/<int:pk>/',EnjoyAPIView.as_view()),
-    path('service/',AlbumAPIView.as_view()),
+    path('service/',ServiceAPIView.as_view()),
     path('service/<int:pk>/',ServiceAPIView.as_view()),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) if settings.DEBUG else []
