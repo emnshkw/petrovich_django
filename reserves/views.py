@@ -8,7 +8,7 @@ from vk_api.longpoll import VkLongPoll
 
 
 def send_message(phone):
-    vk = vk_api.VkApi(token='vk1.a.7nejSscLgVBsOxkwY6IIAl25LjY569jXp-Mhz4o_eU9rKROq1w86-dEJd-epPm8JLlsDRpS01JLPhwLA7JEa6rXsz_Sfz2-DQnORGCMTPeJFl-27MkEZWZJCVXshnJD6JBz4aSdljCMS5E-_0zqz8ucGAZTRvWC-scyztovl4wUeG9DIrOgnfR1_I6rjLjRPgzPoLKoCZouMiTl6K86Yag')
+    vk = vk_api.VkApi(token='vk1.a.y73Kz_6U78IOt2prsBEzDSp-7GKjAwJi4Skd3oVqBtMD1aMZwMLyr0r8lkVGtUSTG0HCemy5Fh1Xfv-5oyCkPyWwcK3qgofckYlxbqynAFQ1B2-gkDongG4osQcHfNywXk9UGsrqEyTf_b7uA5ItvqwEo_9-QA7MYfWEPJw2HczvhxHHuX-zNzcm6oWGl7IB')
     longpoll = VkLongPoll(vk)
     post = {
         'user_id': 235396096,
